@@ -6,7 +6,7 @@ export default function Signin() {
       className="d-flex flex-column justify-content-center align-items-center"
       style={{ height: "100vh" }}
     >
-      <h1>Admin Login</h1>
+      <h1>Login</h1>
       <div
         style={{
           border: "1px solid #ccc",
@@ -15,7 +15,6 @@ export default function Signin() {
         }}
       >
         <form>
-          
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
               Email address
@@ -26,7 +25,6 @@ export default function Signin() {
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
-            
           </div>
           <div className="mb-3">
             <label htmlFor="exampleInputPassword1" className="form-label">

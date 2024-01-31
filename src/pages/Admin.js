@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
-// import Navbar from "../layout/Navbar";
+import Navbar2 from "../layout/Navbar2";
 
 export default function Admin() {
   const [users, setUsers] = useState([]);
@@ -27,7 +27,6 @@ export default function Admin() {
 
   return (
     <div>
-      {/* <Navbar /> */}
       <div className="container">
       
       <div className="py-4">

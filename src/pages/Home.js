@@ -1,6 +1,11 @@
 import React from "react";
-// import Navbar from "../layout/Navbar";
+import Navbar2 from "../layout/Navbar2";
+// import CommunityChat from "./CommunityChat";
 
 export default function Home() {
-  return <div>asdasd</div>;
+  return (
+    <div>
+      <Navbar2 />
+    </div>
+  );
 }
