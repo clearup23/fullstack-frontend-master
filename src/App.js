@@ -9,7 +9,8 @@ import Home from "./pages/Home";
 // import NavbarHome from "./layout/Navbarhome";
 import Videos from "./pages/Videos";
 import CommunityChat from "./pages/CommunityChat";
-
+import "./App.css";
+import ForgotPassword from "./pages/ForgotPassword";
 function App() {
   return (
     <Router>
@@ -20,7 +21,8 @@ function App() {
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Videos" element={<Videos />} />
         <Route path="/CommunityChat" element={<CommunityChat />} />
-        <Route epath="/Signup" element={<Signup />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/ForgotPassword" element={<ForgotPassword />} />
 
         {/* <Route exact path="/community-chat" element={<DiscussionComponent />} /> */}
       </Routes>

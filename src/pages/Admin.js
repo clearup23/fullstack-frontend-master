@@ -28,7 +28,7 @@ export default function Admin() {
   return (
     <div>
       <div className="container">
-      
+      <div></div>
       <div className="py-4">
         <table className="table border shadow">
           <thead>

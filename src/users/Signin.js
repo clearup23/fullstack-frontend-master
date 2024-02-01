@@ -12,6 +12,8 @@ export default function Signin() {
           border: "1px solid #ccc",
           padding: "20px",
           borderRadius: "8px",
+          boxShadow:"5px 5px 7px #9b9b9b -5px -5px 7px #ffffff",
+
         }}
       >
         <form>

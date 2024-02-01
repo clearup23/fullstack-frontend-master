@@ -8,13 +8,13 @@ export default function AddUser() {
   const [user, setUser] = useState({
     name: "",
     email: "",
-    password:"",
+    password: "",
     role: "student",
     document: "",
     subject: "",
   });
 
-  const { name, email, password, role,document ,subject } = user;
+  const { name, email, password, role, document, subject } = user;
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -23,7 +23,7 @@ export default function AddUser() {
   const onSubmit = async (e) => {
     e.preventDefault();
     await axios.post("http://localhost:8082/user", user);
-    navigate("/");
+    navigate("/Home");
   };
 
   const onFileChange = (e) => {
@@ -99,16 +99,15 @@ export default function AddUser() {
               <>
                 <div className="mb-3">
                   <label htmlFor="DocumentLink" className="form-label">
-                  Upload Document (PDF):
-                </label>
-                <input
-                  type="text"
-                  
-                  className="form-control"
-                  name="document"
-                  value={document}
-                  onChange={(e) => onInputChange(e)}
-                />
+                    Upload Document (PDF):
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="document"
+                    value={document}
+                    onChange={(e) => onInputChange(e)}
+                  />
                 </div>
 
                 <div className="mb-3">
@@ -135,14 +134,19 @@ export default function AddUser() {
               <button type="submit" className="btn btn-outline-primary">
                 Submit
               </button>
-              <Link className="btn btn-outline-danger mx-2" to="/">
+              <Link className="btn btn-outline-danger mx-2" to="/Home">
                 Cancel
               </Link>
             </div>
           </form>
 
           <div className="text-center mt-3">
-            <p>Already have an account? <Link to="/Signin">Sign In</Link></p>
+            <p>
+              Already have an account? <Link to="/Signin">Sign In</Link>
+            </p>
+            <p>
+              Forgot Password? <Link to="/ForgotPassword">Reset</Link>
+            </p>
           </div>
         </div>
       </div>

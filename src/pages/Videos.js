@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 // import "../layout/Style.css";
 import "./Video.css";
 import Navbar2 from "../layout/Navbar2";
@@ -129,6 +129,11 @@ const Videos = () => {
     }
   };
 
+  useEffect(() => {
+    // Set default videos when the component mounts
+    handleClick("Maths");
+  }, []); // Empty dependency array ensures that this effect runs only once on mount
+
   return (
     <div>
       <Navbar2 />
@@ -156,10 +161,7 @@ const Videos = () => {
           {videos.map((video, index) => (
             <div key={index} className="class-container">
               <h3>{video.title}</h3>
-              <iframe
-                src={video.url}
-                title={video.title}
-              ></iframe>
+              <iframe src={video.url} title={video.title}></iframe>
             </div>
           ))}
         </div>

@@ -24,18 +24,12 @@ function Navbar() {
           </li>
           <li className="ctn">
             <Link to="/Videos">Videos</Link>
-
-            {/* <a href="/videos">Videos</a> */}
           </li>
           <li className="ctn">
             <Link to="/Connect">Connect</Link>
-
-            {/* <a href="/connect">Connect</a> */}
           </li>
           <li className="ctn">
-            <Link to="/Signin">Logout</Link>
-
-            {/* <a href="/logout">Sign Out</a> */}
+            <Link to="/Signup">Signup</Link>
           </li>
 
           <li className="ctn">
