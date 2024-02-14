@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../layout/Navbar";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import {useParams, useNavigate } from "react-router-dom";
 import { useUser } from "../users/UserContext"; // Assuming you have a user context
 
 export default function Admin() {
